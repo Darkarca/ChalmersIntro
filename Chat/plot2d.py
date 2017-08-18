@@ -13,6 +13,7 @@ ballrect = ball.get_rect()
 while 1:
     for event in pygame.event.get():
         if event.type == pygame.QUIT: sys.exit()
-    for i in range(640):
-        pygame.draw.line(screen, [9,205,218], [i,i] , [i,i], 1)
 
+    pygame.draw.line(screen, [9,205,218], [0,0] , [100,100], 1)
+
+    pygame.display.flip()
