@@ -2,6 +2,8 @@ import zmq
 import sys
 import time
 
+username = str(raw_input("Enter Username: "))
+
 context = zmq.Context()
 socket = context.socket(zmq.PAIR)
 socket.connect("tcp://localhost:%s"% "80")
@@ -9,5 +11,5 @@ socket.connect("tcp://localhost:%s"% "80")
 while True:
     msg = socket.recv()
     print msg
-    socket.send("hej00")
-    time.sleep(1)
+    socket.send("¤&" + username)
+    time.sleep(10)
