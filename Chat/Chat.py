@@ -7,7 +7,7 @@ socket = context.socket(zmq.PAIR)
 socket.bind("tcp://*:%s"% "80")
 
 while True:
-    socket.send("server message to cliet3")
+    socket.send("dasdasd")
     msg = socket.recv()
     print msg
     time.sleep(1)
