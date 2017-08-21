@@ -17,7 +17,7 @@ while 1:
         if event.type == pygame.QUIT: sys.exit()
     for i in range(640):
         y = float(i-320)
-        pygame.draw.line(screen, [9,205,218], [i,480-(pow(y/24,2)*24)] , [i-1,480-(pow(yi/24,2)*24)], 1)
+        pygame.draw.line(screen, [9,205,218], [i,240-(pow(y/24,2)*24)] , [i-1,240-(pow(yi/24,2)*24)], 1)
         yi = y
 
     pygame.display.flip()
