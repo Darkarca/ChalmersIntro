@@ -33,7 +33,11 @@ while 1:
     for i in range(480):
         x = float(i-240)
         for function in exec_functions:
-            exec(function)
+            try:
+                exec(function)
+            except:
+                pass
+
         xi = x
         pygame.draw.rect(screen, [9, 205, 218], [0, 0, 480, 480], 3)
 
