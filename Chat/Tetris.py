@@ -1,7 +1,6 @@
 import sys, pygame, math
 
 
-speed = 2
 speed = 30
 pygame.init()
 
